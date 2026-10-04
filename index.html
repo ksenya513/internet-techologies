@@ -6,18 +6,13 @@
     <title>Календарь</title>
     <meta name="description" content="Календарь настроения для пар на расстоянии">
     <link rel="icon" href="kitik.png">
-    <style>
-        body {
-            background-color: rgb(248, 226, 229);
-            color: rgb(112, 45, 79);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>
+        <h1 id="main-title">
             С каждым днем все ближе к встрече
         </h1>
         <nav>
@@ -35,7 +30,7 @@
             Синхронизация эмоций - возможность видеть динамику настроений друг друга
         </dl>
 
-        <section>
+        <section class="card">
             <h2> <strong>Зачем вести дневник настроения?</strong>
             </h2>
             <ul>
@@ -46,6 +41,31 @@
                     своевременно поддержать</li>
             </ul>
         </section>
+        <section>
+            <h2><strong>Наши</strong> любимые треки</h2>
+            <section class="card">
+                <p><strong>Хочется тебя касаться</strong> - АлоэВера</p>
+                <audio controls>
+                    <source src="track1.mp3" type="audio/mpeg">
+                    <source src="track1.ogg" type="audio/ogg">
+                    Ваш браузер не поддерживает аудио.
+                </audio>
+
+                <p><strong>Мое море</strong> - Noize MC</p>
+                <audio controls>
+                    <source src="track2.mp3" type="audio/mpeg">
+                    <source src="track2.ogg" type="audio/ogg">
+                    Ваш браузер не поддерживает аудио.
+                </audio>
+
+                <p><strong>Футболка</strong> - Элли на маковом поле</p>
+                <audio controls>
+                    <source src="track3.mp3" type="audio/mpeg">
+                    <source src="track3.ogg" type="audio/ogg">
+                    Ваш браузер не поддерживает аудио.
+                </audio>
+            </section>
+        </section>
 
         <section>
             <h3>
@@ -55,10 +75,23 @@
         </section>
 
     </main>
+    <section class="card">
+        <h2>Обратная связь</h2>
+        <form action="/submit" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+
+    </section>
     <footer>
-        <div>
-            <a href="https://github.com/ksenya513/">Мой gitub</a>
-        </div>
+        <address>
+            <a href="https://github.com/ksenya513/">Мой github</a>
+        </address>
 
     </footer>
 

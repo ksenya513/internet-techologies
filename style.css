@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(248, 226, 229);
+    color: rgb(112, 45, 79);
+}
+
+#main-title {
+    color: #880e4f;
+}
+
+.card {
+    background-color: rgb(251, 206, 212);
+    border: 1px solid rgb(214, 25, 119);
+    display: inline-block;
+}
+
+a:hover,
+button:hover {
+    color: #540938;
+}
