@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Календарь</title>
     <meta name="description" content="Календарь настроения для пар на расстоянии">
     <link rel="icon" href="kitik.png">
@@ -15,13 +16,14 @@
         <h1 id="main-title">
             С каждым днем все ближе к встрече
         </h1>
-        <nav>
+        <nav class="nav-list">
             <a href="index.html">Главная</a> |
             <a href="index2.html">Возможности</a>
         </nav>
     </header>
 
     <main>
+
         <dl>
             <dt><strong>DaysBefore</strong></dt>
             <dd>
@@ -29,45 +31,49 @@
             </dd>
             Синхронизация эмоций - возможность видеть динамику настроений друг друга
         </dl>
-
         <section>
             <h2> <strong>Зачем вести дневник настроения?</strong>
             </h2>
             <ul>
-                <li>Каждый день мы сталкиваемся с множеством событий, которые влияют на наше состояние</li>
-                <li>Регулярные записи помогают вовремя обратить вниматие на усталость </li>
+                <li class="text-t">Каждый день мы сталкиваемся с множеством событий, которые влияют на наше состояние
+                </li>
+                <li class="text-t">Регулярные записи помогают вовремя обратить вниматие на усталость </li>
                 <li class="text-t">На расстоянии бывает сложно сохранить связь, трекер позволяет увидеть эмоциональное
                     состояние
                     партнера и
-                    своевременно поддержать и бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
-                    бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+                    своевременно поддержать и бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+                    бла
+                    бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+                    бла
                     бла бла</li>
             </ul>
         </section>
         <section>
             <h2><strong>Наши</strong> любимые треки</h2>
-            <section class="card">
-                <p><strong>Хочется тебя касаться</strong> - АлоэВера</p>
-                <audio controls>
-                    <source src="track1.mp3" type="audio/mpeg">
-                    <source src="track1.ogg" type="audio/ogg">
-                    Ваш браузер не поддерживает аудио.
-                </audio>
+            <div class="grid">
+                <div class="card">
+                    <p><strong>Хочется тебя касаться</strong> - АлоэВера</p>
+                    <audio controls>
+                        <source src="track1.mp3" type="audio/mpeg">
+                        <source src="track1.ogg" type="audio/ogg">
+                        Ваш браузер не поддерживает аудио.
+                    </audio>
 
-                <p><strong>Мое море</strong> - Noize MC</p>
-                <audio controls>
-                    <source src="track2.mp3" type="audio/mpeg">
-                    <source src="track2.ogg" type="audio/ogg">
-                    Ваш браузер не поддерживает аудио.
-                </audio>
+                    <p><strong>Мое море</strong> - Noize MC</p>
+                    <audio controls>
+                        <source src="track2.mp3" type="audio/mpeg">
+                        <source src="track2.ogg" type="audio/ogg">
+                        Ваш браузер не поддерживает аудио.
+                    </audio>
 
-                <p><strong>Футболка</strong> - Элли на маковом поле</p>
-                <audio controls>
-                    <source src="track3.mp3" type="audio/mpeg">
-                    <source src="track3.ogg" type="audio/ogg">
-                    Ваш браузер не поддерживает аудио.
-                </audio>
-            </section>
+                    <p><strong>Футболка</strong> - Элли на маковом поле</p>
+                    <audio controls>
+                        <source src="track3.mp3" type="audio/mpeg">
+                        <source src="track3.ogg" type="audio/ogg">
+                        Ваш браузер не поддерживает аудио.
+                    </audio>
+        </section>
+        </div>
         </section>
 
         <section>

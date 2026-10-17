@@ -1,10 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap');
+
+@media (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #main-title {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 12px;
+        margin: 10px;
+    }
+
+    .text-t {
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 body {
     background-color: rgb(248, 226, 229);
     color: rgb(112, 45, 79);
-    font-family: serif;
+    font-family: 'Bitcount Ink', Georgia, serif;
     line-height: 1.5;
     font-size: 16px;
     margin: 0;
+    text-align: left;
     padding: 16px;
 }
 
@@ -23,6 +61,14 @@ h1 {
     background-color: rgb(251, 206, 212);
     border: 2px dashed rgb(214, 25, 119);
     border-radius: 55px;
+    position: relative;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(248, 226, 229);
 }
 
 img {
@@ -44,7 +90,10 @@ img {
 
 a:hover,
 button:hover {
-    color: #540938;
+    background-color: rgba(251, 99, 152, 0.823);
+    color: rgb(137, 36, 87);
+    opacity: 1;
+    animation: spin 3s ease-in-out infinite;
 }
 
 footer a {
@@ -52,9 +101,25 @@ footer a {
 }
 
 button {
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
     opacity: 0.8;
 }
 
-button:hover {
-    opacity: 1;
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
 }
